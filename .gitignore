@@ -1,0 +1,22 @@
+# Dependencies
+/vendor/
+
+# Cấu hình / bí mật
+.env
+config/*.local.php
+
+# Cache, log
+.phpunit.result.cache
+*.log
+
+# IDE
+.vscode/
+.idea/
+.vs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# File zip / tạm
+*.zip

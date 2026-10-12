@@ -1,0 +1,63 @@
+/* public/css/style.css */
+
+/* ── Typography ─────────────────────────────── */
+body { font-family: 'Segoe UI', system-ui, sans-serif; color: #212529; }
+
+/* ── Product card hover ──────────────────────── */
+.product-card {
+  transition: transform .2s ease, box-shadow .2s ease;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.13) !important;
+}
+
+/* ── Buttons ─────────────────────────────────── */
+.btn-danger  { background-color: #e63946; border-color: #e63946; }
+.btn-danger:hover { background-color: #c1121f; border-color: #c1121f; }
+
+/* ── Breadcrumb ──────────────────────────────── */
+.breadcrumb-item a { color: #e63946; text-decoration: none; }
+.breadcrumb-item a:hover { text-decoration: underline; }
+
+/* ── Star rating ─────────────────────────────── */
+.star-rating { flex-direction: row-reverse; }
+.star-rating input:checked      ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label { color: #ffc107; }
+
+/* ── Pagination ──────────────────────────────── */
+.page-item.active .page-link  { background-color: #e63946; border-color: #e63946; }
+.page-link { color: #e63946; }
+.page-link:hover { color: #c1121f; }
+
+/* ── Badge ───────────────────────────────────── */
+.badge { font-weight: 500; }
+
+/* ── Table ───────────────────────────────────── */
+.table > :not(caption) > * > * { padding: .65rem .75rem; }
+
+/* ── Scrollbar ───────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+
+/* ── Admin sidebar active link ───────────────── */
+.sidebar .nav-link.active { background: #e63946 !important; color: #fff !important; }
+
+/* ── Pay option highlight ────────────────────── */
+.pay-option:has(input:checked) { border-color: #e63946 !important; background: #fff5f5; }
+
+/* ── Responsive img ──────────────────────────── */
+img { max-width: 100%; }
+
+/* ── Card radius ─────────────────────────────── */
+.card { border-radius: 12px !important; }
+
+/* ── Mobile nav spacing ──────────────────────── */
+@media (max-width: 768px) {
+  .main-content { margin-left: 0; padding: 16px; }
+  .sidebar { position: relative; width: 100%; min-height: auto; }
+}
